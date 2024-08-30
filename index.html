@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Free TV - Made by Deepak Chavan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Free TV - Made by Deepak Chavan</h1>
+        <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+      </div>
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search channels..."
+        oninput="filterChannels()"
+      />
+      <div class="card-container">
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/sony-max-hd-ind/', '_blank')"
+        >
+          <img
+            src="https://yt3.googleusercontent.com/Cfdnjxktc_acYt9zRRqMr39jXgWNntxiYR7jCkg37I3503EvuqKVLc3dfr9fU6hFC_8lHNIoW9A=s900-c-k-c0x00ffffff-no-rj"
+            alt="Sony Max HD"
+          />
+          <p>Sony Max HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/travel-xp-hd-hindi/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGpEYO5cxH0NllzDH3ganOAgEUJsJpiudzAw&s"
+            alt="Travel XP HD Hindi"
+          />
+          <p>Travel XP HD Hindi</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/star-bharat-hd-india/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOjY8YhQc0IjPKvB1YlR-m8dRL-vAjWCTNw&s"
+            alt="Star Bharat HD"
+          />
+          <p>Star Bharat HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/colors-cineplex-hd-live/', '_blank')"
+        >
+          <img
+            src="https://jiotvimages.cdn.jio.com/dare_images/images/Color_Cineplex_HD.png"
+            alt="Colors Cineplex HD"
+          />
+          <p>Colors Cineplex HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/colors-hd-live/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25H2BTJk6smeWrkp8vy2VSUUwEBx2jMttUw&s"
+            alt="Colors HD"
+          />
+          <p>Colors HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/star-gold-hd/', '_blank')"
+        >
+          <img
+            src="https://admin.indiantelevision.com/sites/default/files/images/tv-images/2018/04/19/Star-Gold.jpg"
+            alt="Star Gold HD"
+          />
+          <p>Star Gold HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/sony-tv-hd/', '_blank')"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/d/de/Sony_TV_new.png"
+            alt="Sony TV HD"
+          />
+          <p>Sony TV HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/coloors-marathi-hd-live//', '_blank')"
+        >
+          <img
+            src="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/Colors_Marathi_HD_TV_black.png"
+            alt="Colors Marathi HD"
+          />
+          <p>Colors Marathi HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/z-cinema-hd/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MG751jYQjZa_jesiczwnF4Ujs_41zgIZVA&s"
+            alt="Zee Cinema HD"
+          />
+          <p>Zee Cinema HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/sony-bbc-earth-hd/', '_blank')"
+        >
+          <img
+            src="https://www.sonypicturesnetworks.com/images/logos/SBBCE_LOGO_NEW_PNG.png"
+            alt="Sony BBC Earth HD"
+          />
+          <p>Sony BBC Earth HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/discovery-hd-hindi/', '_blank')"
+        >
+          <img
+            src="https://w7.pngwing.com/pngs/637/997/png-transparent-discovery-channel-television-channel-television-show-television-documentary-science-television-globe-logo-thumbnail.png"
+            alt="Discovery HD Hindi"
+          />
+          <p>Discovery HD Hindi</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/animal-planet-hd-hindi-discplus/', '_blank')"
+        >
+          <img
+            src="https://spng.pinpng.com/pngs/s/485-4851143_animal-planet-hd-logo-hd-png-download.png"
+            alt="Animal Planet HD Hindi"
+          />
+          <p>Animal Planet HD Hindi</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/history-tv18-hd-hindi/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3LIgE6Y-7CkvbYhVxxWb5u-V-tPZ7CzvrUg&s"
+            alt="History TV18 HD Hindi"
+          />
+          <p>History TV18 HD Hindi</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/sony-marathi/', '_blank')"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/7/7d/Sony_Marathi.png"
+            alt="Sony Marathi"
+          />
+          <p>Sony Marathi</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/zee-talkies-hd/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5an3XdGekGUiPEUkq5TWGPmH4UiZhD_bnWg&s"
+            alt="Zee Talkies HD"
+          />
+          <p>Zee Talkies HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/tv9-marathii/', '_blank')"
+        >
+          <img
+            src="https://yt3.googleusercontent.com/6sAsc_Al0VOPwmG5ho1zFlIakY_6eCMJUzRrz88UYQZzZTJ1UePU5CUOvFFrhZf62WmrKLAIbw4=s900-c-k-c0x00ffffff-no-rj"
+            alt="TV9 Marathi"
+          />
+          <p>TV9 Marathi</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/aaj-tak-hd/', '_blank')"
+        >
+          <img
+            src="https://play-lh.googleusercontent.com/t8I2oBJs_VLgtz3SCJgf1_qotB7PetRQSVlT8KaHyNq9I_LPILOcQNDq44AARftBgbyV"
+            alt="Aaj Tak HD"
+          />
+          <p>Aaj Tak HD</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/tlc-hd-hindi/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC9w5eYX1K5Lu4NCLPzKTysiHHJC3IwIudSQ&s"
+            alt="TLC HD Hindi"
+          />
+          <p>TLC HD Hindi</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/food-food/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqjwPnQgvP7jG_fPLtf3cz6IW6_HJQkCddSg&s"
+            alt="Food Food"
+          />
+          <p>Food Food</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/jai-maharashtra/', '_blank')"
+        >
+          <img
+            src="https://i1.feedspot.com/200/5704085.jpg?t=1699012291"
+            alt="Jai Maharashtra"
+          />
+          <p>Jai Maharashtra</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/star-pravah-hd-india/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vk8m4aVMJA5QIoN2KDEAA37oTyxbsjsO4w&s"
+            alt="Star Pravah HD"
+          />
+          <p>Star Pravah HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/zee-marathi-hd-ind/', '_blank')"
+        >
+          <img
+            src="https://ottnewstv.com/wp-content/uploads/2024/01/zee-marathi.jpg"
+            alt="Zee Marathi HD"
+          />
+          <p>Zee Marathi HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/zee-talkies-hd/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5an3XdGekGUiPEUkq5TWGPmH4UiZhD_bnWg&s"
+            alt="Zee Talkies HD"
+          />
+          <p>Zee Talkies HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/z-24-taas/', '_blank')"
+        >
+          <img
+            src="https://play-lh.googleusercontent.com/gCYwLx9oRZZb-vGTvWk0PK-dmljlkFyn09tfteQ5xPZQ1kt_eBi4uXVqhcTANGjDUqbb"
+            alt="Zee 24 Taas"
+          />
+          <p>Zee 24 Taas</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/star-plus-hd/', '_blank')"
+        >
+          <img
+            src="https://www.pngitem.com/pimgs/m/3-32979_star-plus-star-plus-logo-new-hd-png.png"
+            alt="Star Plus HD"
+          />
+          <p>Star Plus HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/and-hd/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkEjeR9JB8bnCyZmUOeEFajtWSLGIAGmB4hQ&s"
+            alt="And TV HD"
+          />
+          <p>And TV HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/sony-sab-hd/', '_blank')"
+        >
+          <img
+            src="https://yt3.googleusercontent.com/WrjDeIWr2pmRdCKFuEDfvkovr0O_o7gyfT_J_AMJjFk5KR9HGQVirOP0DeimyAoBUHRfH79X=s900-c-k-c0x00ffffff-no-rj"
+            alt="Sony SAB HD"
+          />
+          <p>Sony SAB HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/sony-max-2/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTldQuadjn_gMY5t5ZwVXXvYCuvEC1Q4nESQw&s"
+            alt="Sony Max 2"
+          />
+          <p>Sony Max 2</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/disney-junior/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7EJQb_wLO5tlRyNUu_0t446hJ3k-k97v-Q&s"
+            alt="Disney Junior"
+          />
+          <p>Disney Junior</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/nickelodeon-sonic-hindi/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS96kGBhUdyPyuYaRNUr8n2gKTfK8-E99vfmA&s"
+            alt="Nickelodeon Sonic Hindi"
+          />
+          <p>Nickelodeon Sonic Hindi</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/discovery-kids-hindi/', '_blank')"
+        >
+          <img
+            src="https://w7.pngwing.com/pngs/232/671/png-transparent-discovery-kids-logo-discovery-inc-television-channel-science-television-child-text.png"
+            alt="Discovery Kids Hindi"
+          />
+          <p>Discovery Kids Hindi</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/investigation-discovery-hindi/', '_blank')"
+        >
+          <img
+            src="https://e7.pngegg.com/pngimages/981/711/png-clipart-united-states-investigation-discovery-television-show-discovery-channel-id-television-text.png"
+            alt="Investigation Discovery Hindi"
+          />
+          <p>Investigation Discovery Hindi</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/nick/', '_blank')"
+        >
+          <img
+            src="https://www.pngitem.com/pimgs/m/18-182079_nick-splat-logo-nickelodeon-splat-logo-png-transparent.png"
+            alt="Nick Hindi"
+          />
+          <p>Nick Hindi</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/pogo/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_1TUlfr0b-2LNrhC0v_pPsk03InaC2bz5g&s"
+            alt="Pogo Hindi"
+          />
+          <p>Pogo Hindi</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/nick-jr/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1eh1m8gxUnv8R-HXxmvepDPoqG1HWnerDg&s"
+            alt="Nick Jr."
+          />
+          <p>Nick Jr.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/travel-xp-hd-hindi/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGpEYO5cxH0NllzDH3ganOAgEUJsJpiudzAw&s"
+            alt="Travel XP HD Hindi"
+          />
+          <p>Travel XP HD Hindi</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/cartoon-network/', '_blank')"
+        >
+          <img
+            src="https://icon2.cleanpng.com/20180620/rjb/kisspng-cartoon-network-digital-app-television-show-5b2a95bf87e929.3219255915295175035567.jpg"
+            alt="Cartoon Network"
+          />
+          <p>Cartoon Network</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/and-pic-hd/', '_blank')"
+        >
+          <img
+            src="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FimageContent-11173-j9hth720-v1%2FimageContent-11173-j9hth720-m1.png&w=256&q=75"
+            alt="And Pictures HD"
+          />
+          <p>And Pictures HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/z-yuva/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRruJffPN9zz4Zt_rx2NqCxuISx-xsTLD2oAA&s"
+            alt="Zee Yuva"
+          />
+          <p>Zee Yuva</p>
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/bollywood-hungama/', '_blank')"
+        >
+          <img
+            src="https://w7.pngwing.com/pngs/53/610/png-transparent-hungama-digital-media-entertainment-bollywood-hungama-music-video-bollywood-miscellaneous-angle-rectangle-thumbnail.png"
+            alt="Bollywood Hungama"
+          />
+          <p>Bollywood Hungama</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/star-pravah-hd-india/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vk8m4aVMJA5QIoN2KDEAA37oTyxbsjsO4w&s"
+            alt="Star Pravah HD"
+          />
+          <p>Star Pravah HD</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/jio-sports/', '_blank')"
+        >
+          <img
+            src="https://pbs.twimg.com/profile_images/1020146971128967169/HUYGIVbC_400x400.jpg"
+            alt="JIO Sports 24×7"
+          />
+          <p>JIO Sports 24×7</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/wwe/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKM8qQjSZq2Yt96bdC0DvIDd3b3XOsm4WneQ&s"
+            alt="WWE"
+          />
+          <p>WWE</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/india-tv/', '_blank')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLjAh4z-0WA9tEjfoRp9A9dGrWLdk3bdU1w&s"
+            alt="India TV"
+          />
+          <p>India TV</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://nowmetv.xyz/live/ndtv-24x7/', '_blank')"
+        >
+          <img
+            src="https://i.pinimg.com/originals/94/7e/40/947e405ff7b832e61e4c1de5913f51a3.png"
+            alt="NDTV 24×7"
+          />
+          <p>NDTV 24×7</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
